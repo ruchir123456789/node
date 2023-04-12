@@ -11,7 +11,7 @@ const port = process.env.PORT || 8000;
 server.listen(port,()=>{
     console.log("server started at "+port)
 })
-app.use(express.static(__dirname+'/public'))
+app.use(express.static(__dirname+'/'))
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html')
